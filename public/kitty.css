@@ -1,0 +1,170 @@
+/* Ensure that margins and paddings are handled consistently */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: lightgreen;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin: 2%; /* Apply 2% margin around the entire screen */
+}
+
+/* Slideshow styles */
+.slideshow-container {
+    position: relative;
+    width: 95vw; /* Use viewport width units to ensure responsiveness */
+    height: 50vh; /* Set height to 35% of the viewport height */
+    margin: auto; /* Center the slideshow container horizontally */
+}
+
+.banner-text {
+    background-color: darkgreen; /* Background color for the banner */
+    color: white; /* Text color */
+    padding: 20px 0; /* Vertical padding to make it larger */
+    font-size: 1.5rem; /* Increase font size */
+    font-weight: bold; /* Make the text bold */
+    text-align: center; /* Center the text inside the marquee */
+    border: 2px solid white; /* Optional border for the banner effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Optional shadow for depth */
+}
+
+/* Customize the speed and behavior of the marquee */
+marquee {
+    width: 100%; /* Full width of the screen */
+    font-family: Arial, sans-serif; /* Optional font change */
+    font-size: x-large;
+}
+
+@keyframes marquee {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+}
+
+
+.live {
+    position: relative;
+    width: 98%; /* Use viewport width units to ensure responsiveness */
+    height: 50vh; /* Set height to 35% of the viewport height */
+    margin-top: 2%;
+    margin-left: 1%; 
+    margin-right: 5%;
+    margin-bottom: 5%;
+    background-color: rebeccapurple;/* Center the slideshow container horizontally */
+}
+
+.slides {
+    display: none;
+}
+
+img {
+    position: absolute;
+    text-align: center;
+    height: 100%; /* Maintain the aspect ratio */
+    width: 100%; /* Maintain aspect ratio */
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from { opacity: 0.4; }
+    to { opacity: 1; }
+}
+
+/* Flexbox layout for content under the slideshow */
+.content-container {
+    display: flex; /* Use flexbox to layout the content */
+    margin: 1%; /* Keep a 1% margin for the content */
+}
+
+.iframe-container {
+    flex: 3; /* Takes up 2/3 of the width */
+    height: 70vh; /* Set the iframe height to 70% of the viewport height */
+}
+
+.iframe-container iframe {
+    width: 100%; /* Full width of the container */
+    height: 100%; /* Full height of the container */
+    border: none; /* Remove default border */
+}
+
+.right-section {
+    flex: 2; /* Takes up 1/3 of the width */
+    height: 70vh; /* Align height with iframe */
+    align-items: center;
+    padding-left: 2%;
+    padding-right: 1%;
+}
+
+.weatherwidget {
+    /* transform: scale(2); */
+    position: relative;
+    padding-left: 25%;
+    width: auto; /* Set width to 100% of the parent */
+    height: auto; /* Auto height to maintain aspect ratio */
+    background-color: white; /* Optional background color */
+}
+
+.meme-container {
+    margin-top: 2%;
+    width: 100%;
+    height: 93%;
+    object-fit: fill;
+}
+
+/* .meme-container {
+    margin-top: 2%;
+    height: 93%;
+    width: 100%;
+    background-color: rgb(206, 44, 44);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    display: flex;         
+    justify-content: center;  
+    align-items: center;      
+    padding-top: 2%;
+    margin-bottom: 2%;          
+} 
+
+.meme-container img {
+    max-width: 100%;        
+    max-height: 100%;      
+    object-fit: contain;   
+    border-radius: 5px;      
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); 
+} */
+
+
+#loading {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+/* Media query for landscape mode */
+@media only screen and (orientation: landscape) {
+    body {
+        transform: rotate(-90deg); /* Rotate content for landscape screens */
+        transform-origin: left top;
+        width: 100vh;
+        height: 100vw;
+        overflow-x: hidden;
+        position: absolute;
+        top: 100%;
+        left: 0;
+    }
+
+    .container {
+        height: 90vw; /* Adjust height to fit the rotated content */
+    }
+
+    .slideshow-container {
+        width: 98%;
+        height: 40%;
+    }
+}
