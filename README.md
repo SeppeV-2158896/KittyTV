@@ -26,7 +26,7 @@ To run this project locally:
 
 Clone this repository to your local machine:
 
-    git clone https://github.com/your-username/into-guild-room-screen.git
+    git clone https://github.com/SeppeV-2158896/KittyTV.git
 
 Navigate to the project folder:
 
