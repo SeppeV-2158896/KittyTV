@@ -14,19 +14,11 @@ As an INTO member, you'll find opportunities to meet new friends, engage with di
 - **Meme Generator**: Shows a new random meme every minute for entertainment.
 - **Weather Forecast**: Displays the 5-day weather forecast for Hervanta.
 - **Slideshow**: Rotates through images that highlight past events and INTO activities.
-- **Live Camera Feed**: Features a live feed from Tampere University’s campus to enhance the dynamic experience in the guild room.
+- **Live Camera Feed**: Features a live feed from Hervanta to show current weather.
 
 ## Guild Room Location
 
 The INTO guild room is located in the basement of **Päärakkennus**, room PC001D1.
-
-## Current Events
-
-- 🎉 **SYMPOSIUM: The 90s Party** 🎉 - Just 2 days to go! 🕺💃
-- 🇫🇮 **7 Keys to Boost Your Finnish Skills** 🇫🇮
-- 🏞️ **Kirskaaniemi Hiking Trip** - Join us on Sat 21.09 for an unforgettable hike!  
-- 🏴‍☠️ **ESN PoBS** - The iconic PoBS is back, happening from November 9th to 11th.
-- 🌶️ **Scoville Challenge** - Think you can handle the heat? Test your spice tolerance with this legendary challenge!
 
 ## Getting Started
 
